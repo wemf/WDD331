@@ -1,0 +1,43 @@
+
+.alert-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.alert {
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.alert-primary {
+    color: $color-1;
+    background-color: lighten($color-1, 45%);
+    border-color: lighten($color-1, 50%);
+}
+
+.alert-secondary{
+    color: $color-2;
+    background-color: lighten($color-2, 45%);
+    border-color: lighten($color-2, 50%);
+}
+
+.alert-success{
+    color: darken($success, 20%);
+    background-color: lighten($success, 10%);
+    border-color: lighten($success, 20%);
+}
+
+.alert-danger{
+    color: darken($color-3, 40%);
+    background-color: lighten($color-3, 10%);
+    border-color: lighten($color-3, 20%);
+}
+
+.alert-warning{
+    color: darken($color-4, 45%);
+    background-color: lighten($color-4, 10%);
+    border-color: lighten($color-4, 20%);
+}
