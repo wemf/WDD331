@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+
+/*
+ * Mixins
+ */
+@mixin text-color-deco ($color: $primary-color, $text-decoration: none) {
+    color: $color;
+    text-decoration: $text-decoration;
+}
+
+/*
+ * Variables
+ */
+$primary-color: #6495ed;
+$secondary-color-light: #faebd7;
+$secondary-color-dark: #deb887;
+$black: #202020;
+$white: #ffffff;
+$gray: #b7b7b7;
+$background-color: #798DF2;
+$base-font: Helvetica, Arial, sans-serif;
+$secondary-font: 'Lora', serif;
+
+body {
+	font-family: $base-font;
+	margin: 0;
+	font-size: 16px;
+}
+
+h1 {
+	font-family: $secondary-font;
+	margin: 0;
+	font-size: 2rem;
+}
+
+h2 {
+	font-family: $secondary-font;
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+// nesting use
+a {
+	color: $primary-color;
+	text-decoration: none;
+	&:visited {
+        @include text-color-deco;
+	}
+	&:active {
+        @include text-color-deco($secondary-color-dark);
+	}
+	&:hover {
+        @include text-color-deco($primary-color, underline);
+	}
+}
+
+// nesting use
+header {
+	background: $background-color;
+	color: $secondary-color-light;
+	margin: 0;
+	padding: 4rem 2rem;
+	text-align: right;
+	a {
+		color: $secondary-color-light;
+		&:visited {
+			color: $secondary-color-light;
+		}
+		&:hover {
+            @include text-color-deco($secondary-color-dark);
+		}
+		&:active {
+            @include text-color-deco
+		}
+	}
+	ul {
+		list-style: none;
+	}
+}
+
+main {
+	background: $secondary-color-light;
+	padding: 2rem;
+}
+
+article {
+	background: $white;
+	padding: 2rem;
+	margin-bottom: 2rem;
+}
+
+img {
+	width: 250px;
+}
+
+figure {
+	display: flex;
+	justify-content: center;
+}
+
+.post-date {
+	color: $gray;
+}
+
+// nesting use
+.post-content {
+	h2 {
+		a {
+			color: $black;
+			font-weight: bold;
+			text-decoration: none;
+			&:visited {
+                font-weight: bold;
+                @include text-color-deco($black, none);
+			}
+			&:active {
+                @include text-color-deco($secondary-color-dark, underline);
+			}
+			&:hover {
+                @include text-color-deco($primary-color, underline);
+			}
+		}
+	}
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = 1025px and larger 
+*/
+@media (min-width: 1025px) {
+	div {
+		display: flex;
+	}
+	body {
+		min-height: 100%;
+	}
+}
