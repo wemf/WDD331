@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+a, a:visited {
+    color: #6495ED;
+    text-decoration: none;
+}
+
+a:active {
+    color:#DEB887;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background:  #798DF2;
+    color: #FAEBD7;
+    margin: 0;
+    padding: 4rem 2rem;
+    text-align: right;
+}
+
+header a, header a:visited {
+    color: #FAEBD7;
+}
+
+header a:hover, header a:active {
+    color: #DEB887;
+    text-decoration: underline;
+}
+
+header ul {
+    list-style: none;
+}
+
+main {
+    background:  #FAEBD7;
+    padding: 2rem;
+}
+
+article {
+    background: #FFFFFF;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 250px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+.post-date {
+    color: #b7b7b7;
+}
+
+.post-content h2 a, .post-content h2 a:visited{
+    color: #202020;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.post-content h2 a:active {
+    color: #DEB887;
+    text-decoration: underline;
+}
+
+.post-content h2 a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+}
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px and larger 
+*/
+@media (min-width: 1025px) {
+  
+    div {
+        display: flex;
+    }
+    body {
+        min-height: 100%;
+    }
+}
