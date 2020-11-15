@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Brigham Young University - Idaho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Rebuild BYU-Idaho home page for WDD 331 course">
+    <meta name="author" content="William Eduardo Meza">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="site-banner white-text">
+        <div class="site-banner__left">
+          <a href="#"
+            ><span aria-hidden="true" class="icon-byui-logo">
+              <span class="sr-only">Link to BYU-Idaho home page</span>
+            </span></a
+          >
+        </div>
+        <div class="site-banner__right">
+          <a href="http://www.byui.edu/#">
+            <span class="icon-search text-white mobile-header-icon">
+              <span class="sr-only">Search BYU-I</span>
+            </span>
+          </a>
+          <a
+            href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f"
+          >
+            <span class="icon-audience text-white mobile-header-icon">
+              <span class="sr-only">Login</span>
+            </span>
+          </a>
+          <a href="http://www.byui.edu/#" class="expand-menu">
+            <span class="icon-menu text-white mobile-header-icon">
+              <span class="sr-only">Expand Menu</span>
+            </span>
+          </a>
+          <form
+            class="search-form"
+            aria-label="Search byui.edu"
+            method="get"
+            action="https://www.byui.edu/search/result?"
+            role="search"
+          >
+            <div>
+              <label for="searchDesktop" class="sr-only"
+                >Search BYU-I websites:
+              </label>
+              <input
+                id="searchDesktop"
+                name="q"
+                placeholder="Powered by Google"
+                alt="Search BYU-I websites (powered by Google.com)."
+                type="text"
+              />
+
+              <button type="submit">
+                <span aria-hidden="true" class="icon icon-magnifying-glass ">
+                  <span class="sr-only">Submit</span>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="site-sub-banner">
+        <h1>Brigham Young University - Idaho</h1>
+      </div>
+    </header>
+    <main>
+      <div class="main-container"> 
+        <div class="media">
+          <div class="carousel">
+            <img src="./images/carousel.jpg" alt="carousel">
+          </div>
+          <div class="media-items">
+            <div class="media-item">
+              <img src="./images/campus-videos.jpg" alt="videos">
+              <div class="media-description">
+                <span>Campus Videos</span>
+                <span class="icon-angle-right" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="media-item">
+              <img src="./images/photo-gallery.jpg" alt="gallery">
+              <div class="media-description">
+                <span>Photo Gallery</span>
+                <span class="icon-angle-right" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="media-item">
+              <img src="./images/explore-campus.jpg" alt="campus">
+              <div class="media-description">
+                <span>Explore Campus</span>
+                <span class="icon-angle-right" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sid bar images -->
+        <div class="sidebar">
+          <div class="infobar">
+            <h3>GET INFORMATION FOR:</h3>
+            <select id="info">
+              <option value="future-students"><a href="">Future Students</a></option>
+              <option value="current-students"><a href="">Current Students</a></option>
+              <option value="employees"><a href="">Employees</a></option>
+              <option value="parents-and-family"><a href="">Parents and Family</a></option>
+              <option value="alumni"><a href="">Alumni</a></option>
+              <option value="visitors"><a href="">Visitors</a></option>
+            </select>
+          </div><br>
+          <div class="resources">
+            <h3>Resources</h3>
+            <ul>
+              <li><a hfref="#!">Apply Now</a></li>
+              <li><a hfref="#!">Financial Aid</a></li>
+              <li><a hfref="#!">Degrees and Programs</a></li>
+              <li><a hfref="#!">Student Housing</a></li>
+              <li><a hfref="#!">Tuition and Fees</a></li>
+              <li><a hfref="#!">Academic Deadlines</a></li>
+            </ul>
+          </div><br>
+          <div class="important-dates">
+            <h3>Important Dates</h3>
+            <div class="row">
+              <span class="date">Nov 17 </span>
+              <span class="separator">-</span>
+              <span class="date-desc">Devotional - Kristen Glenn</span>
+            </div>
+            <div class="row">
+              <span class="date">Nov 19 </span>
+              <span class="separator">-</span>
+              <span class="date-desc">Symphony Orchestra Livestream</span>
+            </div>
+            <div class="row">
+              <span class="date">Nov 24 </span>
+              <span class="separator">-</span>
+              <span class="date-desc">Devotional - Randy Beard</span>
+            </div>
+            <div class="row">
+              <span class="date">Nov 25 </span>
+              <span class="separator">-</span>
+              <span class="date-desc">A Campus Thanksgiving</span>
+            </div>
+          </div><br>
+          <div class="university-message">
+            <img src="./images/ready-for-teachers.jpg" alt="ready for teachers image">
+            <h4>Teachers Who Know Me</h4>
+            <p>Faculty members are not only experts in their respective fields, but they also put teaching and mentoring students as their top priority.</p>
+            <div class="university-button">
+              <a href="#!" class="button btn-primary">More details</a>
+            </div>
+          </div>
+        </div> 
+        <!-- end of side bar-->
+        <div class="newsroom">
+          <h2>Newroom</h2>
+          <hr>
+          <article class="article">
+            <img src="./images/newsroom1.jpg" alt="theater">
+            <div class="date-container">
+              <div class="news-date">OCTOBER 23, 2020</div>
+              <h4><a href="">BYU-Idaho Releases Fall 2020 Enrollment</a></h4>
+              <p class="article-description">
+                Enrollment of both campus-based and online students grows for Fall 2020.
+              </p>
+            </div>
+          </article>
+          <hr>
+          <article class="article">
+            <img src="./images/newsroom2.jpg" alt="ben rector">
+            <div class="date-container">
+              <div class="news-date">OCTOBER 8, 2020</div>
+              <h4><a href="">BYU-Idaho Department of Music Announces a Call for Hymn Texts</a></h4>
+              <p class="article-description">
+                BYU-Idaho Music Department prepares for 2021 BYU-Idaho Hymn Festival
+              </p>
+            </div>
+          </article>
+          <hr>
+          <article class="article">
+            <img src="./images/newsroom3.png" alt="extravadance">
+            <div class="date-container">
+              <div class="news-date">OCTOBER 5, 2020</div>
+              <h4><a href="">COVID-19: Steps for Staying Safe at BYU-Idaho</a></h4>
+              <p class="article-description">
+                What to do if you contract COVID-19.
+              </p>
+            </div>
+          </article>
+          <div class="newsroom-button">
+            <a href="#!" class="button btn-primary">Newsroom</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

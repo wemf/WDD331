@@ -1,0 +1,1456 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/*# sourceMappingURL=normalize.min.css.map */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "BYUI Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTQzyDMXhdD8sAj6OAJTFsBI.woff2) format("woff2");
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRsxEYwM7FgeyaSgU71cLG0.woff) format("woff");
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTcDdSZkkecOE1hvV7ZHvhyU.ttf) format("truetype");
+}
+@font-face {
+  font-family: "BYUI Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/TCmDhmS1RRL7aqhqZW19hwLUuEpTyoUstqEm5AMlJo4.woff2) format("woff2");
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/uYKcPVoh6c5R0NpdEY5A-Q.woff) format("woff");
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/yYRnAC2KygoXnEC8IdU0gQLUuEpTyoUstqEm5AMlJo4.ttf) format("truetype");
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("icomoon.eot?z9anye#iefix") format("embedded-opentype"), url("icomoon.ttf?z9anye") format("truetype"), url("icomoon.woff?z9anye") format("woff"), url("icomoon.svg?z9anye#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location:before {
+  content: "";
+}
+
+.icon-byui-logo:before {
+  content: "";
+}
+
+.icon-search:before {
+  content: "";
+}
+
+.icon-audience:before {
+  content: "";
+}
+
+.icon-menu:before {
+  content: "";
+}
+
+.icon-address-book:before {
+  content: "";
+}
+
+.icon-align-center:before {
+  content: "";
+}
+
+.icon-align-left:before {
+  content: "";
+}
+
+.icon-align-middle:before {
+  content: "";
+}
+
+.icon-align-offset:before {
+  content: "";
+}
+
+.icon-align-right:before {
+  content: "";
+}
+
+.icon-angle-down:before {
+  content: "";
+}
+
+.icon-angle-left:before {
+  content: "";
+}
+
+.icon-angle-right:before {
+  content: "";
+}
+
+.icon-angle-up:before {
+  content: "";
+}
+
+.icon-aperture:before {
+  content: "";
+}
+
+.icon-archive:before {
+  content: "";
+}
+
+.icon-at:before {
+  content: "";
+}
+
+.icon-award:before {
+  content: "";
+}
+
+.icon-backspace:before {
+  content: "";
+}
+
+.icon-bar-graph:before {
+  content: "";
+}
+
+.icon-basket:before {
+  content: "";
+}
+
+.icon-battery-empty:before {
+  content: "";
+}
+
+.icon-battery-full:before {
+  content: "";
+}
+
+.icon-beaker:before {
+  content: "";
+}
+
+.icon-bell:before {
+  content: "";
+}
+
+.icon-bluetooth:before {
+  content: "";
+}
+
+.icon-bold:before {
+  content: "";
+}
+
+.icon-bolt-arrow:before {
+  content: "";
+}
+
+.icon-bolt:before {
+  content: "";
+}
+
+.icon-book-open:before {
+  content: "";
+}
+
+.icon-book:before {
+  content: "";
+}
+
+.icon-books:before {
+  content: "";
+}
+
+.icon-box:before {
+  content: "";
+}
+
+.icon-briefcase:before {
+  content: "";
+}
+
+.icon-browser:before {
+  content: "";
+}
+
+.icon-bug:before {
+  content: "";
+}
+
+.icon-bullet-list:before {
+  content: "";
+}
+
+.icon-calendar:before {
+  content: "";
+}
+
+.icon-camera:before {
+  content: "";
+}
+
+.icon-cart:before {
+  content: "";
+}
+
+.icon-cc:before {
+  content: "";
+}
+
+.icon-chart:before {
+  content: "";
+}
+
+.icon-chat:before {
+  content: "";
+}
+
+.icon-checked:before {
+  content: "";
+}
+
+.icon-circle-angle-down:before {
+  content: "";
+}
+
+.icon-circle-angle-left:before {
+  content: "";
+}
+
+.icon-circle-angle-right:before {
+  content: "";
+}
+
+.icon-circle-angle-up:before {
+  content: "";
+}
+
+.icon-circle-arrow-down:before {
+  content: "";
+}
+
+.icon-circle-arrow-left:before {
+  content: "";
+}
+
+.icon-circle-arrow-right:before {
+  content: "";
+}
+
+.icon-circle-arrow-up:before {
+  content: "";
+}
+
+.icon-circle-triangle-down:before {
+  content: "";
+}
+
+.icon-circle-triangle-left:before {
+  content: "";
+}
+
+.icon-circle-triangle-right:before {
+  content: "";
+}
+
+.icon-circle-triangle-up:before {
+  content: "";
+}
+
+.icon-circulate:before {
+  content: "";
+}
+
+.icon-clipboard:before {
+  content: "";
+}
+
+.icon-clock:before {
+  content: "";
+}
+
+.icon-cloud:before {
+  content: "";
+}
+
+.icon-cloudy:before {
+  content: "";
+}
+
+.icon-code:before {
+  content: "";
+}
+
+.icon-cog:before {
+  content: "";
+}
+
+.icon-command:before {
+  content: "";
+}
+
+.icon-compass:before {
+  content: "";
+}
+
+.icon-contrast:before {
+  content: "";
+}
+
+.icon-credit-card:before {
+  content: "";
+}
+
+.icon-crop:before {
+  content: "";
+}
+
+.icon-cursor:before {
+  content: "";
+}
+
+.icon-delete:before {
+  content: "";
+}
+
+.icon-denied:before {
+  content: "";
+}
+
+.icon-desktop:before {
+  content: "";
+}
+
+.icon-document:before {
+  content: "";
+}
+
+.icon-dollar:before {
+  content: "";
+}
+
+.icon-download:before {
+  content: "";
+}
+
+.icon-droplet:before {
+  content: "";
+}
+
+.icon-earth:before {
+  content: "";
+}
+
+.icon-eject:before {
+  content: "";
+}
+
+.icon-elevator:before {
+  content: "";
+}
+
+.icon-ellipsis:before {
+  content: "";
+}
+
+.icon-enlarge:before {
+  content: "";
+}
+
+.icon-euro:before {
+  content: "";
+}
+
+.icon-expand-down:before {
+  content: "";
+}
+
+.icon-expand-left:before {
+  content: "";
+}
+
+.icon-expand-right:before {
+  content: "";
+}
+
+.icon-expand-up:before {
+  content: "";
+}
+
+.icon-export:before {
+  content: "";
+}
+
+.icon-eye:before {
+  content: "";
+}
+
+.icon-eyedropper:before {
+  content: "";
+}
+
+.icon-facebook-circle:before {
+  content: "";
+}
+
+.icon-facebook-square:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-feed:before {
+  content: "";
+}
+
+.icon-file-excel:before {
+  content: "";
+}
+
+.icon-file-missing:before {
+  content: "";
+}
+
+.icon-file-pdf:before {
+  content: "";
+}
+
+.icon-file-word:before {
+  content: "";
+}
+
+.icon-filepath:before {
+  content: "";
+}
+
+.icon-files:before {
+  content: "";
+}
+
+.icon-fire:before {
+  content: "";
+}
+
+.icon-flag:before {
+  content: "";
+}
+
+.icon-flashlight:before {
+  content: "";
+}
+
+.icon-folder:before {
+  content: "";
+}
+
+.icon-food:before {
+  content: "";
+}
+
+.icon-fork:before {
+  content: "";
+}
+
+.icon-forward:before {
+  content: "";
+}
+
+.icon-google-plus-circle:before {
+  content: "";
+}
+
+.icon-google-plus-square:before {
+  content: "";
+}
+
+.icon-google-plus:before {
+  content: "";
+}
+
+.icon-graduation:before {
+  content: "";
+}
+
+.icon-grid2:before {
+  content: "";
+}
+
+.icon-grid3:before {
+  content: "";
+}
+
+.icon-grid4:before {
+  content: "";
+}
+
+.icon-group:before {
+  content: "";
+}
+
+.icon-hand:before {
+  content: "";
+}
+
+.icon-hashtag:before {
+  content: "";
+}
+
+.icon-hd:before {
+  content: "";
+}
+
+.icon-headphones:before {
+  content: "";
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+.icon-home:before {
+  content: "";
+}
+
+.icon-hospital:before {
+  content: "";
+}
+
+.icon-inbox:before {
+  content: "";
+}
+
+.icon-infinite:before {
+  content: "";
+}
+
+.icon-info:before {
+  content: "";
+}
+
+.icon-instagram-circle:before {
+  content: "";
+}
+
+.icon-instagram-square:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-italic:before {
+  content: "";
+}
+
+.icon-key:before {
+  content: "";
+}
+
+.icon-keyboard:before {
+  content: "";
+}
+
+.icon-layers:before {
+  content: "";
+}
+
+.icon-layout:before {
+  content: "";
+}
+
+.icon-left-quote:before {
+  content: "";
+}
+
+.icon-library:before {
+  content: "";
+}
+
+.icon-lightbulb:before {
+  content: "";
+}
+
+.icon-link-broken:before {
+  content: "";
+}
+
+.icon-link:before {
+  content: "";
+}
+
+.icon-linkedin-circle:before {
+  content: "";
+}
+
+.icon-linkedin-square:before {
+  content: "";
+}
+
+.icon-linkedin:before {
+  content: "";
+}
+
+.icon-list:before {
+  content: "";
+}
+
+.icon-lock:before {
+  content: "";
+}
+
+.icon-magnifying-glass:before {
+  content: "";
+}
+
+.icon-mail-open:before {
+  content: "";
+}
+
+.icon-mail:before {
+  content: "";
+}
+
+.icon-map-pin:before {
+  content: "";
+}
+
+.icon-map:before {
+  content: "";
+}
+
+.icon-megaphone:before {
+  content: "";
+}
+
+.icon-microphone:before {
+  content: "";
+}
+
+.icon-minus:before {
+  content: "";
+}
+
+.icon-moon:before {
+  content: "";
+}
+
+.icon-move-down:before {
+  content: "";
+}
+
+.icon-move-up:before {
+  content: "";
+}
+
+.icon-move:before {
+  content: "";
+}
+
+.icon-movie:before {
+  content: "";
+}
+
+.icon-music-note:before {
+  content: "";
+}
+
+.icon-network:before {
+  content: "";
+}
+
+.icon-new-tab:before {
+  content: "";
+}
+
+.icon-new-window:before {
+  content: "";
+}
+
+.icon-office:before {
+  content: "";
+}
+
+.icon-paintbrush:before {
+  content: "";
+}
+
+.icon-pause:before {
+  content: "";
+}
+
+.icon-pencil:before {
+  content: "";
+}
+
+.icon-phone:before {
+  content: "";
+}
+
+.icon-picture:before {
+  content: "";
+}
+
+.icon-pictures:before {
+  content: "";
+}
+
+.icon-pie-chart:before {
+  content: "";
+}
+
+.icon-pinterest-circle:before {
+  content: "";
+}
+
+.icon-pinterest-square:before {
+  content: "";
+}
+
+.icon-pinterest:before {
+  content: "";
+}
+
+.icon-play:before {
+  content: "";
+}
+
+.icon-plus:before {
+  content: "";
+}
+
+.icon-popup:before {
+  content: "";
+}
+
+.icon-pound:before {
+  content: "";
+}
+
+.icon-power:before {
+  content: "";
+}
+
+.icon-pushpin:before {
+  content: "";
+}
+
+.icon-puzzle:before {
+  content: "";
+}
+
+.icon-question-mark:before {
+  content: "";
+}
+
+.icon-radio-checked:before {
+  content: "";
+}
+
+.icon-radio-unchecked:before {
+  content: "";
+}
+
+.icon-rain:before {
+  content: "";
+}
+
+.icon-read-more:before {
+  content: "";
+}
+
+.icon-redo:before {
+  content: "";
+}
+
+.icon-refresh:before {
+  content: "";
+}
+
+.icon-rewind:before {
+  content: "";
+}
+
+.icon-right-quote:before {
+  content: "";
+}
+
+.icon-sharepoint-circle:before {
+  content: "";
+}
+
+.icon-sharepoint-square:before {
+  content: "";
+}
+
+.icon-sharepoint:before {
+  content: "";
+}
+
+.icon-shield:before {
+  content: "";
+}
+
+.icon-shrink:before {
+  content: "";
+}
+
+.icon-shuffle:before {
+  content: "";
+}
+
+.icon-smartphone:before {
+  content: "";
+}
+
+.icon-sound-off:before {
+  content: "";
+}
+
+.icon-sound-on:before {
+  content: "";
+}
+
+.icon-spinner:before {
+  content: "";
+}
+
+.icon-square-angle-down:before {
+  content: "";
+}
+
+.icon-square-angle-left:before {
+  content: "";
+}
+
+.icon-square-angle-right:before {
+  content: "";
+}
+
+.icon-square-angle-up:before {
+  content: "";
+}
+
+.icon-star:before {
+  content: "";
+}
+
+.icon-suitcase:before {
+  content: "";
+}
+
+.icon-sun:before {
+  content: "";
+}
+
+.icon-tablet:before {
+  content: "";
+}
+
+.icon-tag-fill:before {
+  content: "";
+}
+
+.icon-tag:before {
+  content: "";
+}
+
+.icon-tags:before {
+  content: "";
+}
+
+.icon-talk:before {
+  content: "";
+}
+
+.icon-target:before {
+  content: "";
+}
+
+.icon-terminal:before {
+  content: "";
+}
+
+.icon-text:before {
+  content: "";
+}
+
+.icon-thumbs-down:before {
+  content: "";
+}
+
+.icon-thumbs-up:before {
+  content: "";
+}
+
+.icon-timer:before {
+  content: "";
+}
+
+.icon-trash:before {
+  content: "";
+}
+
+.icon-triangle-down:before {
+  content: "";
+}
+
+.icon-triangle-left:before {
+  content: "";
+}
+
+.icon-triangle-right:before {
+  content: "";
+}
+
+.icon-triangle-up:before {
+  content: "";
+}
+
+.icon-trifold:before {
+  content: "";
+}
+
+.icon-twitter-circle:before {
+  content: "";
+}
+
+.icon-twitter-square:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-uhd:before {
+  content: "";
+}
+
+.icon-underline:before {
+  content: "";
+}
+
+.icon-undo:before {
+  content: "";
+}
+
+.icon-unlock:before {
+  content: "";
+}
+
+.icon-upload:before {
+  content: "";
+}
+
+.icon-user:before {
+  content: "";
+}
+
+.icon-vga:before {
+  content: "";
+}
+
+.icon-video:before {
+  content: "";
+}
+
+.icon-warning:before {
+  content: "";
+}
+
+.icon-waves:before {
+  content: "";
+}
+
+.icon-wrench:before {
+  content: "";
+}
+
+.icon-x:before {
+  content: "";
+}
+
+.icon-x1:before {
+  content: "";
+}
+
+.icon-youtube-circle:before {
+  content: "";
+}
+
+.icon-youtube-square:before {
+  content: "";
+}
+
+.icon-youtube-text-circle:before {
+  content: "";
+}
+
+.icon-youtube-text-square:before {
+  content: "";
+}
+
+.icon-youtube-text:before {
+  content: "";
+}
+
+.icon-youtube:before {
+  content: "";
+}
+
+.site-banner {
+  display: flex;
+  justify-content: space-between;
+  background: #056cb6;
+  font-size: 2rem;
+}
+
+.site-banner__left {
+  background: #020202;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+.site-banner__left a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-banner__right {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+.site-banner__right a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 0.75rem;
+}
+
+.site-sub-banner {
+  display: flex;
+  background: #eaeaea;
+  justify-content: flex-end;
+  padding: 0 1rem;
+}
+.site-sub-banner h1 {
+  font-family: "BYUI Open Sans";
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.search-form {
+  display: none;
+}
+
+/* 
+  ##Device = Laptops, Desktops
+*/
+@media (min-width: 1025px) {
+  .search-form {
+    display: block;
+    margin-left: 0.75rem;
+  }
+
+  .expand-menu {
+    display: none;
+  }
+
+  .site-sub-banner {
+    justify-content: flex-start;
+  }
+
+  .site-sub-banner h1 {
+    font-size: 2rem;
+  }
+}
+body {
+  font-size: 14px;
+  font-family: "BYUI Open Sans";
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.button {
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-family: "BYUI Open Sans";
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #056cb6;
+  color: #ffffff;
+}
+
+.main-container {
+  padding: 1rem;
+  max-width: 1280px;
+  margin: auto;
+}
+@media (min-width: 1025px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+  .main-container .media {
+    grid-area: 1/1/2/2;
+  }
+  .main-container .sidebar {
+    grid-area: 1/2/3/3;
+  }
+  .main-container .newsroom {
+    grid-area: 2/1/3/2;
+  }
+}
+
+.carousel {
+  margin: 1rem 0;
+}
+
+.media-items {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .media-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+}
+.media-items .media-item {
+  margin: 1rem 0;
+}
+@media (min-width: 1025px) {
+  .media-items .media-item {
+    margin: 0 10px;
+    max-width: 240px;
+  }
+}
+.media-items .media-item .media-description {
+  display: flex;
+  justify-content: space-between;
+  color: #0076b6;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  padding: 0.25rem 0.5rem;
+}
+
+.infobar #info {
+  display: none;
+}
+.infobar h3 {
+  background-color: #eaeaea;
+  font-size: 1rem;
+  border: 1px solid #727272;
+  padding: 5px 0 5px 15px;
+  border-radius: 5px;
+}
+.infobar:hover #info {
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+}
+
+.article {
+  display: flex;
+}
+.article img {
+  display: none;
+}
+.article a {
+  font-size: 1.2rem;
+  color: #0076b6;
+  text-decoration: none;
+}
+.article .news-date {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
+@media (min-width: 1025px) {
+  .article img {
+    display: flex;
+    max-width: 150px;
+    margin-right: 1rem;
+  }
+}
+
+.newsroom-button {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: flex-end;
+}
+
+.resources {
+  border-left: 1px solid #727272;
+  border-right: 1px solid #727272;
+}
+.resources h3 {
+  color: white;
+  background-color: #727272;
+  margin: 0;
+  padding: 10px 0 10px 15px;
+}
+.resources a {
+  display: block;
+  padding: 5px 0 5px 15px;
+  color: #0076b6;
+  border-bottom: 1px solid #727272;
+}
+.resources a:hover {
+  background-color: #eaeaea;
+}
+
+.important-dates {
+  margin: 0;
+}
+.important-dates h3 {
+  background-color: #056cb6;
+  color: white;
+  padding: 10px 0 10px 15px;
+  margin: 0;
+}
+.important-dates .row {
+  border-bottom: 1px solid #727272;
+  padding: 5px 0 5px 15px;
+  font-size: 0.9em;
+}
+.important-dates .row:hover {
+  background-color: #eaeaea;
+}
+.important-dates .date {
+  margin: auto;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.university-message {
+  margin-left: 20px;
+  border-radius: 5px;
+  height: fit-content;
+  border: 1px solid black;
+}
+.university-message h4, .university-message p {
+  padding: 1rem 1rem 0;
+  margin: 0;
+}
+.university-message img {
+  padding: 5px 5px 0 5px;
+}
+.university-message .university-button {
+  display: flex;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

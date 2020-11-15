@@ -1,0 +1,68 @@
+.site-banner {
+    display: flex;
+    justify-content: space-between;
+    background: $byui-blue;
+    font-size: 2rem;
+}
+
+.site-banner__left {
+    background: $body-font;
+    padding: .75rem;
+    display: flex;
+    align-items: center;
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.site-banner__right {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    a {
+        color: $white;
+        text-decoration: none;
+        margin-left: .75rem;
+    }
+}
+
+
+.site-sub-banner {
+    display: flex;
+    background: $light-gray;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    h1{
+        font-family: 'BYUI Open Sans';
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+}
+
+.search-form {
+    display: none;
+}
+
+/* 
+  ##Device = Laptops, Desktops
+*/
+@media (min-width: 1025px) {
+    .search-form {
+        display: block;
+        margin-left: .75rem;
+    }
+
+    .expand-menu{
+        display: none;
+    }
+
+    .site-sub-banner{
+        justify-content: flex-start;
+    }
+
+    .site-sub-banner h1{
+        font-size: 2rem;
+    }
+}
+  
