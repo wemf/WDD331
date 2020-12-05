@@ -1,0 +1,93 @@
+body {
+  background: #1976b6;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.menu {
+  background: #000;
+  height: 100vh;
+  color: #fff;
+  transform: translateX(-100%);
+  z-index: 1;
+  max-width: 400px;
+  transition: all 0.5s ease-in-out;
+}
+.menu.open {
+  transform: translateX(0);
+}
+
+.menu-list {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+.menu-list ul {
+  margin-bottom: 1rem;
+}
+.menu-list a {
+  font-size: 2.5rem;
+  color: #b7b7b7;
+  text-decoration: none;
+}
+.menu-list a:hover {
+  color: #fff;
+}
+
+.menu-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(500%);
+  z-index: 2;
+  /* ANIMATION */
+}
+.menu-icon.open {
+  transform: translateX(calc(500% - 80px));
+}
+.menu-icon.open .menu-icon__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-icon.open .menu-icon__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-icon.open .menu-icon__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.menu-icon__burger {
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.menu-icon__burger::before, .menu-icon__burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.menu-icon__burger::before {
+  transform: translateY(-16px);
+}
+.menu-icon__burger::after {
+  transform: translateY(16px);
+}
+
+/*# sourceMappingURL=style.css.map */
